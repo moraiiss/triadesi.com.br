@@ -1,0 +1,7 @@
+[
+    { "route": "/", "label": "Início" },
+    { "route": "/about", "label": "Sobre" },
+    { "route": "/services", "label": "Serviços" },
+    { "route": "/appointments", "label": "Compromissos" },
+    { "route": "/contact", "label": "Contatos" }
+]

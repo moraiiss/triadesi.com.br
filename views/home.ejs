@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <%- include('./partials/head-includes.html'); %>
+
+        <title>TRIADE | <%= title %></title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <%- include('./partials/header.html'); %>
+
+        <main class="main-content" id="main-content">                     
+            <section class="position-relative vh-100 d-flex align-items-center bg-dark text-white">
+                <img src="/img/backgrounds/back-03.jpg" class="bg-image opacity-50">
+                <div class="container position-relative py-5">
+                    <div class="row">
+                        <div class="col-xl-9 mx-auto text-center">
+                            <h1 class="display-2 mb-4">Soluções Para a Indústria</h1>
+                            <p class="lead mb-5">15 anos de atuação nos mais importantes cenários econômicos do país </p>
+                            <a href="" class="btn btn-outline-white btn-lg rounded-pill btn-rise">
+                                <div class="btn-rise-bg bg-white"></div>
+                                <div class="btn-rise-text">Saiba Mais</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+   
+        <%- include('./partials/footer.html'); %>
+        
+        <script src="/js/gsap.min.js"></script>
+        <script src="/js/gsap-custom.min.js"></script>
+    </body>
+</html>

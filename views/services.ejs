@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <%- include('./partials/head-includes.html'); %>
+
+        <title>TRIADE | <%= title %></title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <%- include('./partials/header.html'); %>
+
+        <main class="main-content" id="main-content">                     
+            <section class="position-relative overflow-hidden bg-dark text-white jarallax" data-speed=".2">
+                <img src="/img/backgrounds/back-02.jpg" alt="" class="jarallax-img opacity-50">
+                <div class="container position-relative pt-12 pb-12">
+                    <div class="row py-lg-7">
+                        <div class="col-xl-10 mx-auto text-center">
+                            <h1 class="display-1 mb-4">Soluções Para a Indústria</h1>
+                            <p class="lead mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, accusantium.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="position-relative hr-linear-bottom bg-white">
+                <div class="container py-9 py-lg-11 position-relative z-index-1">
+                    <ul class="mb-5 nav nav-pills d-inline-flex align-items-center justify-content-end mb-0">
+                        <li class="nav-item small text-muted d-flex me-2 me-md-4 d-none d-md-block">Filtro por:</li>
+                        <% filters.forEach((filter) => { %>
+                            <li class="nav-item">
+                                <a  class="nav-link py-1 px-3 px-lg-4" 
+                                    href="#" 
+                                    data-bs-toggle="pill" 
+                                    data-filter="<%= filter.name === "*" ? filter.name:`.${filter.name}` %>" 
+                                    data-bs-target="<%= filter.name === "*" ? "#all":`#${filter.name}` %>">
+                                    <%= filter.label %>
+                                </a>
+                            </li>
+                        <% }) %>
+                    </ul>
+
+                    <div id="all" data-isotope='{"layoutMode": "masonry"}' class="row g-3">
+                        <% services.forEach((service) => { %>
+                        <div class="col-md-6 <%= service.filter %> grid-item">
+                            <a href="#!" class="text-white bg-dark position-relative d-block overflow-hidden card-hover-2">
+                                <img src="/img/projects/<%= service.imgName %>" alt="" class="w-100 img-zoom">
+                                <div class="card-hover-2-overlay position-absolute start-0 top-0 w-100 h-100 d-flex px-4 py-5 flex-column justify-content-between">
+                                    <div class="card-hover-2-header w-100">
+                                        <div class="card-hover-2-title">
+                                            <h5 class="fs-4 mb-2"><%= service.serviceTitle %></h5>
+                                        </div>
+                                        <p class="mb-0">
+                                            <%= service.description %>
+                                        </p>
+                                    </div>
+                                    <div class="card-hover-2-footer w-100 mt-auto">
+                                        <span class="tags d-block flex-grow-1"><%= service.label %></span>
+                                        <span class="card-hover-2-footer-link">
+                                            <span>Ver Case</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <% }) %>
+                    </div>
+            </section>
+
+            <section class="border-bottom overflow-hidden">
+                <div class="container pt-9 pb-6 pb-lg-9">
+                    <div class="row align-items-center">
+                        <!--begin:section-title-->
+                        <div class="col-md-4 col-lg-3 text-center text-md-start">
+                            <h6 class="mb-5 mb-md-0 text-muted">Nossos Parceiros</h6>
+                        </div>
+                        <!--end:section-title-->
+
+                        <div class="col-md-8 col-lg-9">
+                            <!--Paertners List-->
+                            <div class="d-flex flex-wrap justify-content-md-end justify-content-center">
+                                <!--Partner-->
+                                <div
+                                    class="d-flex justify-content-center align-items-center px-4 py-3 width-13x h-auto">
+                                    <img class="img-fluid" src="/img/partners/dark/nasdaq.svg" alt="">
+                                </div>
+                                <!--Partner-->
+                                <div
+                                    class="d-flex justify-content-center align-items-center px-4 py-3 width-13x h-auto">
+                                    <img class="img-fluid" src="/img/partners/dark/zillow.svg" alt="">
+                                </div>
+                                <!--Partner-->
+                                <div
+                                    class="d-flex justify-content-center align-items-center px-4 py-3 width-13x h-auto">
+                                    <img class="img-fluid" src="/img/partners/dark/slack.svg" alt="">
+                                </div>
+                                <!--Partner-->
+                                <div
+                                    class="d-flex justify-content-center align-items-center px-4 py-3 width-13x h-auto">
+                                    <img class="img-fluid" src="/img/partners/dark/google.svg" alt="">
+                                </div>
+                                <!--Partner-->
+                                <div
+                                    class="d-flex justify-content-center align-items-center px-4 py-3 width-13x h-auto">
+                                    <img class="img-fluid" src="/img/partners/dark/amazon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+   
+        <%- include('./partials/footer.html'); %>
+        
+    </body>
+</html>

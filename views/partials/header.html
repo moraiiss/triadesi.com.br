@@ -1,0 +1,110 @@
+<!--Begin::Header-->
+<header class="z-index-fixed header-absolute-top pt-lg-1 header-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo.svg" alt="" width="300">
+            </a>
+            <div class="d-flex align-items-center navbar-no-collapse-items py-3 order-last">
+                <div class="nav-item fullscreen-toggler order-last ms-4">
+                    <!--Fullscreen trigger-->
+                    <a href="#offcanvas-fullscreen" class="nav-link width-3x d-block" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas-fullscreen">
+                        <div class="width-2x mb-1 border-bottom border-white border-2"></div>
+                        <div class="width-2x ms-auto border-bottom border-white border-2"></div>
+                    </a>
+                </div>
+                <div class="nav-item ms-3 ms-lg-4">
+                    <a href="#"
+                        class="btn btn-outline-light border-0 rounded-pill btn-sm p-0 width-3x height-3x flex-center">
+                    <i class="bx bxl-facebook fs-5"></i>    
+                    </a>
+                </div>
+                <div class="nav-item ms-1">
+                    <a href="#"
+                        class="btn btn-outline-light border-0 rounded-pill btn-sm p-0 width-3x height-3x flex-center">
+                        <i class="bx bxl-twitter fs-5"></i>
+                    </a>
+                </div>
+                <div class="nav-item ms-1">
+                    <a href="#"
+                        class="btn btn-outline-light border-0 rounded-pill btn-sm p-0 width-3x height-3x flex-center">
+                        <i class="bx bxl-instagram fs-5"></i>
+                    </a>
+                </div>
+                <div class="nav-item ms-1">
+                    <a href="#"
+                        class="btn btn-outline-light border-0 rounded-pill btn-sm p-0 width-3x height-3x flex-center">
+                        <i class="bx bxl-linkedin fs-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--/end::Header-->
+
+<!--Begin::Fullscreen Offcanvas-->
+<div class="offcanvas offcanvas-fullscreen offcanvas-top h-100" id="offcanvas-fullscreen">
+    <div class="offcanvas-body">
+        <!--Offcanvas fullscreen close-->
+        <div class="position-absolute end-0 top-0 mt-3 me-5">
+            <button class="btn btn-outline-secondary p-0 flex-center width-4x height-4x rounded-circle"
+                data-bs-dismiss="offcanvas">
+                <i class="bx bx-x fs-4"></i>
+            </button>
+        </div>
+        <!--Offcanvas fullscreen content-->
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-7 mb-5 mb-md-0">
+                    <div class="d-inline-flex">
+                        <ul class="js-hover-img">
+                            <li class="js-hover-img-item mb-4">
+                                <div class="display-4">
+                                    <a href="/">Início</a>
+                                </div>
+                            </li>
+                            <li class="js-hover-img-item mb-4">
+                                <div class="display-4">
+                                    <a href="/about">Sobre</a>
+                                </div>
+                            </li>
+                            <li class="js-hover-img-item mb-4">
+                                <div class="display-4">
+                                    <a href="/services">Serviços</a>
+                                </div>
+                            </li>
+                            <li class="js-hover-img-item mb-4">
+                                <div class="display-4">
+                                    <a href="#">Compromissos</a>
+                                </div>
+                            </li>
+                            <li class="js-hover-img-item">
+                                <div class="display-4">
+                                    <a href="#">Contato</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!--Address-->
+                    <h3 class="mb-4 fullscreen-item">1355 Market St, <br> Suite 900,
+                        San Francisco<br>
+                        CA, 94103</h3>
+                    <div class="fullscreen-item">
+                        <!--Phone-->
+                        <a href="#!" class="fs-4 link-hover-underline">+011(1234) 56789</a>
+                        <!--Divider-->
+                        <hr class="bg-transparent border-top my-4 opacity-75">
+                        <!--Email-->
+                        <a href="mailto:mail@domain.agency"
+                            class="fs-4 link-hover-underline">mail@domain.agency</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
