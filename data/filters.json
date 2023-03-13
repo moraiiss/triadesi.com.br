@@ -1,0 +1,7 @@
+[
+	{ "name": "*", "label": "Todos" },
+	{ "name": "maintenance", "label": "Manutenção" },
+	{ "name": "manager", "label": "Gestão" },
+	{ "name": "construction", "label": "Construção" },
+	{ "name": "facilities", "label": "Facilities" }
+]
